@@ -44,7 +44,7 @@ module.exports = {
       //from https://github.com/john-smilga/gatsby-tutorial-2020/blob/master/gatsby-config.js
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `3o2914b2zflq`,
+        spaceId: `5nv6yj8qblqw`,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.ACCESS_TOKEN,
       },
