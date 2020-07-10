@@ -1,0 +1,13 @@
+.page {
+    background: steelblue;
+     padding: 1rem;
+}
+
+.page h1{
+    color: azure;
+}
+
+.text{
+    text-transform: uppercase;
+    
+}
