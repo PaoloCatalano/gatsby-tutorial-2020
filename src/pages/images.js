@@ -2,12 +2,13 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import img from "../images/img4.jpg"
 import Image from "gatsby-image"
+import Layout from "../components/layout"
 
 const getImages = graphql`
   {
     fixed: file(relativePath: { eq: "img1.jpg" }) {
       childImageSharp {
-        fixed(width: 500, grayscale: true) {
+        fixed(width: 225, grayscale: true) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -26,6 +27,7 @@ const getImages = graphql`
 const Images = () => {
   const data = useStaticQuery(getImages)
   return (
+    <Layout>
     <section className="images">
       <article className="single-images">
         <h3>basic image</h3>
@@ -43,6 +45,7 @@ const Images = () => {
         </div>
       </article>
     </section>
+    </Layout>
   )
 }
 

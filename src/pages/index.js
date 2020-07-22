@@ -16,8 +16,13 @@ export default () => (
       }}
     >
       hello from index
+      <p className="tit">INFONDOALMAR</p>
+      <p className="tit">INFONDOALMAAAR</p>
     </h1>
+    <span class="s1 s">PAOLO</span>
+    <span class="s2 s">PAOLO</span>
     <ExampleButton>click me</ExampleButton>
+    
   </Layout>
 )
 

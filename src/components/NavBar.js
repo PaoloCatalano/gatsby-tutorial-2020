@@ -1,9 +1,24 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
-const NavBar = () => {
+function NavBar() {
+  const [show, handleShow] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true)
+      } else  {
+        handleShow(false);
+      }
+    });
+    /* return () => {
+      window.removeEventListener("scroll")
+    } */
+  }, []);
+
   return (
-    <nav>
+    <nav className={`navbar ${show && "nav__black"}`}>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -14,13 +29,13 @@ const NavBar = () => {
         <li>
           <Link to="/products">Products</Link>
         </li>
-        <li>
-          <Link to="/images">Examples</Link>
+        <li className="nav__logo">
+          <img src=""/>
+          <Link to="/examples">Examples</Link>
         </li>
-        <li>
+        <li className="nav__avatar">
           <Link to="/images">images</Link>
         </li>
-        
       </ul>
     </nav>
   )

@@ -1,52 +1,205 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 body {
-    font-family: 'Press Start 2P', cursive;
-    font-size: x-small;
-    line-height: 1rem;
-    text-align:center;
-    margin: 1rem;
-    background: aquamarine;
+  display: grid;
+  font-family: "Press Start 2P", cursive;
+  font-size: x-small;
+  line-height: 1rem;
+  text-align: center;
+  padding: 5rem 0 0 0;
+  margin: 1rem;
+  background: aquamarine;
 }
 
 h1 {
-    color: blue;
-    text-transform: capitalize;
+  color: blue;
+  text-transform: capitalize;
 }
-ul{
-    list-style-type: none;
-}
-
-.images{
-    text-align: center;
-    width: 80vw;
-    margin: 0 auto 10rem auto;
-}
-.single-images{
-    border: 3px solid green;
-    padding: 1rem 0;
-}
-@media screen and (min-width: 992px){
-    .images{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 1rem;
-    }
-}
-.small{
-    width: 200px;
+ul {
+  list-style-type: none;
 }
 
-.single-product{
-    width: 90vw;
-    max-width: 1170vw;
-    margin: 3rem auto;
+.images {
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto 10rem auto;
+}
+.single-images {
+  border: 3px solid green;
+  padding: 1rem 0;
+}
+@media screen and (min-width: 992px) {
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+.small {
+  width: 200px;
+}
+
+.single-product {
+  width: 90vw;
+  max-width: 1170vw;
+  margin: 3rem auto;
 }
 
 @media screen and (min-width: 768px) {
-    .single-product{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 2rem;
+  .single-product {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+}
+
+.navbar {
+  background: aquamarine;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 90px;
+  z-index: 1;
+
+  /*animation*/
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav__black {
+  background: black;
+}
+.nav__logo,
+.nav__avatar {
+  position: fixed;
+  width: 80px;
+  object-fit: contain;
+}
+.nav__logo {
+  left: 20px;
+}
+.nav__avatar {
+  right: 20px;
+}
+
+.container {
+  display: grid;
+}
+
+/*Neon letter*/
+/* Created by Sahil Sunny */
+
+body {
+    /* background-color: #0000101; */
+    text-align: center;
+}
+
+.s { /*SCRITTA SOTTOSTANTE*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%);
+    font-size: 240px;
+    /* font-family: Arial; */
+    color: #aa55ff;
+}
+
+.s1 {
+    z-index: 1;
+    text-shadow: 4px 4px 10px #585252,
+                 5px 5px 75px #7722cc,
+                 -5px -5px 75px #7722cc;
+    animation: text-shadow 3s alternate infinite ;
+}
+
+.s2 {
+    font-size: 245px;
+    font-size: 245px;
+    color: aquamarine;
+    z-index: 2;
+}
+
+@keyframes text-shadow {
+    from {
+        text-shadow: 0px 0px 0px #000000,
+                     0px 0px 0px #000000,
+                     0px 0px 0px #000000;
     }
+    to {
+        text-shadow: 4px 4px 10px #000000,
+                     5px 5px 75px #7722cc,
+                     -5px -5px 75px #7722cc;
+    }
+}
+/* Created by matar (white with black background */
+
+.s2:hover{
+  color: rgba(233, 255, 248);
+}
+
+/*----finish Neon letter*/
+
+/*gradienti mobili*/
+/* Created by Poorani K */
+.tit {
+  padding: 1px;
+    color:rgba(255,255,255,.1);
+    background-image:url("http://Wallpaper-House.com/data/out/7/wallpaper2you_184580.jpg");
+    background-repeat:repeat-x; /*muove l'immagine da giù a su*/
+    background-clip:text;
+    animation:water 10s linear infinite;
+}
+
+@keyframes water{
+    0%{
+        background-position:left 0px top 80px;
+    }
+     40%{
+        background-position:left 800px top 50px;
+    }
+     80%{
+        background-position:left 1800px top -50px;
+    }
+     100%{
+        background-position:left 2400px top 80px;
+    }
+}
+.REPEAT_RADIAL_GRADIENT
+{
+    height:150px;
+    width:350px;
+    display: block;
+    margin: 0 auto;
+    border-radius:25px;
+    border-style:double;
+    text-align: center;
+    background:-webkit-repeating-radial-gradient(black 10%,white 30%);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+/*-----fine gradienti mobili*/
+
+/*reapeting gradient*/
+
+.monitor {
+    float: left;
+    width: 500px; 
+    height: 600px;
+    margin: 4px;
+    color: #FFF;
+    background: repeating-linear-gradient(lightgreen
+    , green 2px);
 }
