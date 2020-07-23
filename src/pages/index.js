@@ -14,14 +14,16 @@ export default () => (
          * no - ma camelText
          * */
       }}
-    >
-      hello from index
+      >
+      <ExampleButton>click me</ExampleButton>
       <p className="tit">INFONDOALMAR</p>
       <p className="tit">INFONDOALMAAAR</p>
     </h1>
-    <span class="s1 s">PAOLO</span>
-    <span class="s2 s">PAOLO</span>
-    <ExampleButton>click me</ExampleButton>
+    <div className="name-container">
+
+    <p className="s1 s">PAOLO</p>
+    <p className="s2 s">PAOLO</p>
+    </div>
     
   </Layout>
 )
