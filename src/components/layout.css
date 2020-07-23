@@ -91,51 +91,48 @@ ul {
 /* Created by Sahil Sunny */
 
 body {
-    /* background-color: #0000101; */
-    text-align: center;
+  /* background-color: #0000101; */
+  text-align: center;
 }
 
-.s { /*SCRITTA SOTTOSTANTE*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: 50% 50%;
-    transform: translate(-50%, -50%);
-    font-size: 240px;
-    /* font-family: Arial; */
-    color: #aa55ff;
+.s {
+  /*SCRITTA SOTTOSTANTE*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+  font-size: 240px;
+  /* font-family: Arial; */
+  color: #aa55ff;
 }
 
 .s1 {
-    z-index: 1;
-    text-shadow: 4px 4px 10px #585252,
-                 5px 5px 75px #7722cc,
-                 -5px -5px 75px #7722cc;
-    animation: text-shadow 3s alternate infinite ;
+  z-index: 1;
+  text-shadow: 4px 4px 10px #585252, 5px 5px 75px #7722cc,
+    -5px -5px 75px #7722cc;
+  animation: text-shadow 3s alternate infinite;
 }
 
 .s2 {
-    font-size: 245px;
-    font-size: 245px;
-    color: aquamarine;
-    z-index: 2;
+  font-size: 245px;
+  font-size: 245px;
+  color: aquamarine;
+  z-index: 2;
 }
 
 @keyframes text-shadow {
-    from {
-        text-shadow: 0px 0px 0px #000000,
-                     0px 0px 0px #000000,
-                     0px 0px 0px #000000;
-    }
-    to {
-        text-shadow: 4px 4px 10px #000000,
-                     5px 5px 75px #7722cc,
-                     -5px -5px 75px #7722cc;
-    }
+  from {
+    text-shadow: 0px 0px 0px #000000, 0px 0px 0px #000000, 0px 0px 0px #000000;
+  }
+  to {
+    text-shadow: 4px 4px 10px #000000, 5px 5px 75px #7722cc,
+      -5px -5px 75px #7722cc;
+  }
 }
 /* Created by matar (white with black background */
 
-.s2:hover{
+.s2:hover {
   color: rgba(233, 255, 248);
 }
 
@@ -145,61 +142,104 @@ body {
 /* Created by Poorani K */
 .tit {
   padding: 1px;
-    color:rgba(255,255,255,.1);
-    background-image:url("http://Wallpaper-House.com/data/out/7/wallpaper2you_184580.jpg");
-    background-repeat:repeat-x; /*muove l'immagine da giù a su*/
-    background-clip:text;
-    animation:water 10s linear infinite;
+  color: rgba(255, 255, 255, 0.1);
+  background-image: url("http://Wallpaper-House.com/data/out/7/wallpaper2you_184580.jpg");
+  background-repeat: repeat-x; /*muove l'immagine da giù a su*/
+  background-clip: text;
+  animation: water 10s linear infinite;
 }
 
-@keyframes water{
-    0%{
-        background-position:left 0px top 80px;
-    }
-     40%{
-        background-position:left 800px top 50px;
-    }
-     80%{
-        background-position:left 1800px top -50px;
-    }
-     100%{
-        background-position:left 2400px top 80px;
-    }
+@keyframes water {
+  0% {
+    background-position: left 0px top 80px;
+  }
+  40% {
+    background-position: left 800px top 50px;
+  }
+  80% {
+    background-position: left 1800px top -50px;
+  }
+  100% {
+    background-position: left 2400px top 80px;
+  }
 }
-.REPEAT_RADIAL_GRADIENT
-{
-    height:150px;
-    width:350px;
-    display: block;
-    margin: 0 auto;
-    border-radius:25px;
-    border-style:double;
-    text-align: center;
-    background:-webkit-repeating-radial-gradient(black 10%,white 30%);
-    background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
+.REPEAT_RADIAL_GRADIENT {
+  height: 150px;
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+  border-style: double;
+  text-align: center;
+  background: -webkit-repeating-radial-gradient(black 10%, white 30%);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
 }
 @keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /*-----fine gradienti mobili*/
 
 /*reapeting gradient*/
+.pane {
+  background: rgb(66, 66, 66);
+  display: grid;
+  margin: 0 auto;
+  place-items: center;
+  width: 609px;
+  height: 459px;
+  border-radius: 1%;
+}
 
+.monitor-border {
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(#a0a0ff 87%, #8080b8);
+  width: 600px;
+  height: 450px;
+  border-radius: 5%;
+}
 .monitor {
-    float: left;
-    width: 500px; 
-    height: 600px;
-    margin: 4px;
-    color: #FFF;
-    background: repeating-linear-gradient(lightgreen
-    , green 2px);
+  font-size: 12px;
+  border-radius: 2%;
+  margin: 0 auto;
+  width: 500px;
+  height: 350px;
+  color: #a0a0ff;
+  /* background: repeating-linear-gradient(lightgreen
+    , green 2px); */
+  background: repeating-linear-gradient(#a0a0ff, #4040e0 2px);
+animation: blinking 0.01s alternate infinite
+}
+.pointer-monitor,
+.ready-monitor {
+  text-align: left;
+}
+.pointer-monitor {
+  /* display: none; */
+  font-size: 22px;
+  margin: -2px;
+  padding: 0;
+  animation: blinking_text 0.4s alternate infinite
+}
+
+@keyframes blinking_text{
+  
+  0% {
+    color:transparent;
+  }
+}
+@keyframes blinking{
+  
+  0% {
+background: repeating-linear-gradient(#a9a9ff, #4040e0 2px);  }
 }
