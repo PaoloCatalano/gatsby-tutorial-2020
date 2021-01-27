@@ -29,6 +29,12 @@ function NavBar() {
         <li>
           <Link to="/products">Products</Link>
         </li>
+        <li>
+          <Link to="/products2">Products2</Link>
+        </li>
+        <li>
+          <Link to="/products3">Products3</Link>
+        </li>
         <li className="nav__logo">
           <img src=""/>
           <Link to="/examples">Examples</Link>

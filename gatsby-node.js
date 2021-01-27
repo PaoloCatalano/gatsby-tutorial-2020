@@ -24,4 +24,40 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+  const result2 = await graphql(`
+    query GetProducts {
+      products: allContentfulProduct {
+        nodes {
+          slug
+        }
+      }
+    }
+  `)
+  result2.data.products.nodes.forEach(prod => {
+    createPage({
+      path: `/products2/${prod.slug}`,
+      component: path.resolve(`src/templates/product-templates.js`),
+      context: {
+        slug: prod.slug,
+      },
+    })
+  })
+  const result3 = await graphql(`
+    query GetProducts {
+      products: allContentfulProduct {
+        nodes {
+          slug
+        }
+      }
+    }
+  `)
+  result3.data.products.nodes.forEach(prod => {
+    createPage({
+      path: `/products3/${prod.slug}`,
+      component: path.resolve(`src/templates/product-templates.js`),
+      context: {
+        slug: prod.slug,
+      },
+    })
+  })
 }

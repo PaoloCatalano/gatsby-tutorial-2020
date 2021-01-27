@@ -4,6 +4,7 @@ import img from "../images/img4.jpg"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
 
+
 const getImages = graphql`
   {
     fixed: file(relativePath: { eq: "img1.jpg" }) {
